@@ -520,7 +520,7 @@ governing permissions and limitations under
 		<repository>
 			<id>github</id>
 			<name>GitHub Apache Maven Packages</name>
-			<url>https://maven.pkg.github.com/dirigiblelabs/olingo-odata2</url>
+			<url>https://maven.pkg.github.com/codbex/olingo-odata2</url>
 		</repository>
 	</distributionManagement>
 </project>
