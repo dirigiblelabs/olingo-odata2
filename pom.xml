@@ -17,9 +17,9 @@ governing permissions and limitations under
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.codbex.olingo</groupId>
+	<groupId>org.apache.olingo</groupId>
 	<artifactId>olingo-odata2-parent</artifactId>
-	<version>3.1.2-SNAPSHOT</version>
+	<version>3.1.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<name>${project.artifactId}</name>
@@ -390,7 +390,7 @@ governing permissions and limitations under
 			</build>
 		</profile>
 		<profile>
-			<id>release</id>
+			<id>apache-release</id>
 			<build>
 				<plugins>
 					<plugin>
@@ -416,13 +416,8 @@ governing permissions and limitations under
 									<excludePackageNames>
 										org.apache.olingo.odata2.core:org.apache.olingo.odata2.core.*:org.apache.olingo.odata2.jpa.processor.core:org.apache.olingo.odata2.jpa.processor.core.*:org.apache.olingo.odata2.annotation.processor.core:org.apache.olingo.odata2.annotation.processor.core.*:org.apache.olingo.odata2.testutil:org.apache.olingo.odata2.testutil.*
 									</excludePackageNames>
-									<additionalparam>-Xdoclint:none</additionalparam>
-									<additionalOptions>-Xdoclint:none</additionalOptions>
 									<additionalJOptions>
 										<additionalJOption>-quiet</additionalJOption>
-										<additionalJOption>-Xdoclint:none</additionalJOption>
-										<additionalJOption>-Xdoclint:all</additionalJOption>
-										<additionalJOption>-Xdoclint:-missing</additionalJOption>
 									</additionalJOptions>
 									<groups>
 										<group>
@@ -461,58 +456,18 @@ governing permissions and limitations under
 							</execution>
 						</executions>
 					</plugin>
-					<plugin>
-						<groupId>org.apache.maven.plugins</groupId>
-						<artifactId>maven-gpg-plugin</artifactId>
-						<version>3.1.0</version>
-						<executions>
-							<execution>
-								<id>sign-artifacts</id>
-								<phase>verify</phase>
-								<goals>
-									<goal>sign</goal>
-								</goals>
-								<configuration>
-									<!-- Prevent gpg from using pinentry
-									programs -->
-									<gpgArguments>
-										<arg>--pinentry-mode</arg>
-										<arg>loopback</arg>
-									</gpgArguments>
-								</configuration>
-							</execution>
-						</executions>
-					</plugin>
 				</plugins>
 			</build>
 		</profile>
 	</profiles>
 
 	<repositories>
-        <repository>
-            <id>mvnrepository</id>
-            <url>https://repo1.maven.org/maven2</url>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-        </repository>
-    </repositories>
-
-	<pluginRepositories>
-        <pluginRepository>
-            <id>sonatype-public-repository</id>
-            <url>https://s01.oss.sonatype.org/content/groups/public</url>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-        </pluginRepository>
-    </pluginRepositories>
+		<repository>
+			<id>oss.sonatype.org</id>
+			<name>OSS Sonatype Staging</name>
+			<url>https://oss.sonatype.org/content/groups/staging</url>
+		</repository>
+	</repositories>
 
 	<dependencyManagement>
 		<dependencies>
@@ -562,13 +517,10 @@ governing permissions and limitations under
 	</dependencyManagement>
 
 	<distributionManagement>
-		<snapshotRepository>
-            <id>ossrh</id>
-            <url>https://s01.oss.sonatype.org/content/repositories/snapshots</url>
-        </snapshotRepository>
-        <repository>
-            <id>ossrh</id>
-            <url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2</url>
-        </repository>
+		<repository>
+			<id>github</id>
+			<name>GitHub Apache Maven Packages</name>
+			<url>https://maven.pkg.github.com/dirigiblelabs/olingo-odata2</url>
+		</repository>
 	</distributionManagement>
 </project>

@@ -15,9 +15,9 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<parent>
-		<groupId>com.codbex.olingo</groupId>
+		<groupId>org.apache.olingo</groupId>
 		<artifactId>olingo-odata2-jpa-processor</artifactId>
-		<version>3.1.2-SNAPSHOT</version>
+		<version>3.1.1-SNAPSHOT</version>
 		<relativePath>..</relativePath>
 	</parent>
 
@@ -83,14 +83,14 @@
 
 		<!-- OData Annotation Support -->
 		<dependency>
-			<groupId>com.codbex.olingo</groupId>
+			<groupId>org.apache.olingo</groupId>
 			<artifactId>olingo-odata2-api-annotation</artifactId>
 			<version>${project.version}</version>
 		</dependency>
 
 		<!-- OData API Support -->
 		<dependency>
-			<groupId>com.codbex.olingo</groupId>
+			<groupId>org.apache.olingo</groupId>
 			<artifactId>olingo-odata2-jpa-processor-api</artifactId>
 			<version>${project.version}</version>
 		</dependency>

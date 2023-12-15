@@ -15,9 +15,9 @@
     <name>${project.artifactId}</name>
 
     <parent>
-        <groupId>com.codbex.olingo</groupId>
+        <groupId>org.apache.olingo</groupId>
         <artifactId>olingo-odata2-dist</artifactId>
-        <version>3.1.2-SNAPSHOT</version>
+        <version>3.1.1-SNAPSHOT</version>
         <relativePath>..</relativePath>
     </parent>
 
@@ -75,42 +75,42 @@
             <version>${cxf.version}</version>
         </dependency>
         <dependency>
-            <groupId>com.codbex.olingo</groupId>
+            <groupId>org.apache.olingo</groupId>
             <artifactId>olingo-odata2-core</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>com.codbex.olingo</groupId>
+            <groupId>org.apache.olingo</groupId>
             <artifactId>olingo-odata2-api</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>com.codbex.olingo</groupId>
+            <groupId>org.apache.olingo</groupId>
             <artifactId>olingo-odata2-jpa-processor-api</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>com.codbex.olingo</groupId>
+            <groupId>org.apache.olingo</groupId>
             <artifactId>olingo-odata2-jpa-processor-core</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>com.codbex.olingo</groupId>
+            <groupId>org.apache.olingo</groupId>
             <artifactId>olingo-odata2-jpa-processor-ref</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>com.codbex.olingo</groupId>
+            <groupId>org.apache.olingo</groupId>
             <artifactId>olingo-odata2-annotation-processor-api</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>com.codbex.olingo</groupId>
+            <groupId>org.apache.olingo</groupId>
             <artifactId>olingo-odata2-annotation-processor-core</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>com.codbex.olingo</groupId>
+            <groupId>org.apache.olingo</groupId>
             <artifactId>olingo-odata2-annotation-processor-ref</artifactId>
             <version>${project.version}</version>
         </dependency>

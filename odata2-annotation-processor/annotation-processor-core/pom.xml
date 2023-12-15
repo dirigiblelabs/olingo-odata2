@@ -18,9 +18,9 @@
   <name>${project.artifactId}</name>
 
   <parent>
-    <groupId>com.codbex.olingo</groupId>
+    <groupId>org.apache.olingo</groupId>
     <artifactId>olingo-odata2-annotation-processor</artifactId>
-    <version>3.1.2-SNAPSHOT</version>
+    <version>3.1.1-SNAPSHOT</version>
     <relativePath>..</relativePath>
   </parent>
 
@@ -66,29 +66,29 @@
 
   <dependencies>
     <dependency>
-      <groupId>com.codbex.olingo</groupId>
+      <groupId>org.apache.olingo</groupId>
       <artifactId>olingo-odata2-annotation-processor-api</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>com.codbex.olingo</groupId>
+      <groupId>org.apache.olingo</groupId>
       <artifactId>olingo-odata2-api-annotation</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>com.codbex.olingo</groupId>
+      <groupId>org.apache.olingo</groupId>
       <artifactId>olingo-odata2-api</artifactId>
       <version>${project.version}</version>
     </dependency>
     <!-- Test dependencies -->
     <dependency>
-      <groupId>com.codbex.olingo</groupId>
+      <groupId>org.apache.olingo</groupId>
       <artifactId>olingo-odata2-core</artifactId>
       <version>${project.version}</version>
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>com.codbex.olingo</groupId>
+      <groupId>org.apache.olingo</groupId>
       <artifactId>olingo-odata2-testutil</artifactId>
       <version>${project.version}</version>
       <scope>test</scope>
