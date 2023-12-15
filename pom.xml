@@ -391,9 +391,6 @@ governing permissions and limitations under
 		</profile>
 		<profile>
 			<id>release</id>
-			<activation>
-                <activeByDefault>false</activeByDefault>
-            </activation>
 			<build>
 				<plugins>
 					<plugin>
@@ -419,8 +416,13 @@ governing permissions and limitations under
 									<excludePackageNames>
 										org.apache.olingo.odata2.core:org.apache.olingo.odata2.core.*:org.apache.olingo.odata2.jpa.processor.core:org.apache.olingo.odata2.jpa.processor.core.*:org.apache.olingo.odata2.annotation.processor.core:org.apache.olingo.odata2.annotation.processor.core.*:org.apache.olingo.odata2.testutil:org.apache.olingo.odata2.testutil.*
 									</excludePackageNames>
+									<additionalparam>-Xdoclint:none</additionalparam>
+									<additionalOptions>-Xdoclint:none</additionalOptions>
 									<additionalJOptions>
 										<additionalJOption>-quiet</additionalJOption>
+										<additionalJOption>-Xdoclint:none</additionalJOption>
+										<additionalJOption>-Xdoclint:all</additionalJOption>
+										<additionalJOption>-Xdoclint:-missing</additionalJOption>
 									</additionalJOptions>
 									<groups>
 										<group>
