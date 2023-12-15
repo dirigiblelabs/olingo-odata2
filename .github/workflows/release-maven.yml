@@ -1,4 +1,4 @@
-name: Release - Platform
+name: Release - Maven
 
 on:
   workflow_dispatch:
