@@ -21,8 +21,8 @@ jobs:
       platform-name: olingo-odata2
       release-version: ${{ inputs.release-version }}
       snapshot-version: ${{ inputs.snapshot-version }}
-      # maven-release: true
-      buildx-enabled: false
+      maven-release: true
+      docker-release: false
       release-content: |
         ## olingo-odata2 - ${{ inputs.release-version }}
     secrets: inherit
