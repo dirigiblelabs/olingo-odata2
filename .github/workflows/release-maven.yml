@@ -11,6 +11,10 @@ on:
         description: Snapshot Version
         required: true
         default: 3.1.2-SNAPSHOT
+    secrets:
+      GH_TOKEN:
+        type: string
+        default: ${{ secrets.GITHUB_TOKEN }}
 
 run-name: 'version set to ${{ inputs.release-version }} for release'
 
