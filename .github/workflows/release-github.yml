@@ -1,4 +1,4 @@
-name: Release
+name: Release GitHub
 
 on:
   workflow_dispatch:
@@ -6,11 +6,11 @@ on:
       releaseVersion:
         description: Release Version
         required: true
-        default: 3.0.0
+        default: 3.1.1
       snapshotVersion:
         description: Snapshot Version
         required: true
-        default: 3.0.1-SNAPSHOT
+        default: 3.1.2-SNAPSHOT
 
 run-name: 'version set to ${{ github.event.inputs.releaseVersion }} for release'
 
@@ -67,7 +67,7 @@ jobs:
       run: mvn deploy
       env:
         GITHUB_USERNAME: x-access-token
-        GITHUB_TOKEN: ${{ secrets.RELEASE_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         BUILD_ENV: 'github-actions'
 
     - name: "Git: Commit Release Version"

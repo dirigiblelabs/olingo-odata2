@@ -22,9 +22,9 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<parent>
-		<groupId>org.apache.olingo</groupId>
+		<groupId>com.codbex.olingo</groupId>
 		<artifactId>olingo-odata2-jpa-processor</artifactId>
-		<version>3.1.1-SNAPSHOT</version>
+		<version>3.1.2-SNAPSHOT</version>
 		<relativePath>../</relativePath>
 	</parent>
 
@@ -78,7 +78,7 @@
 	
 	<dependencies>
 		<dependency>
-			<groupId>org.apache.olingo</groupId>
+			<groupId>com.codbex.olingo</groupId>
 			<artifactId>olingo-odata2-api-annotation</artifactId>
 			<version>${project.version}</version>
 		</dependency>
@@ -95,12 +95,12 @@
 		<!-- OData Java Library Support -->
 		<!-- ########################## -->
 		<dependency>
-			<groupId>org.apache.olingo</groupId>
+			<groupId>com.codbex.olingo</groupId>
 			<artifactId>olingo-odata2-api</artifactId>
 			<version>${project.version}</version>
 		</dependency>
 		<dependency>
-			<groupId>org.apache.olingo</groupId>
+			<groupId>com.codbex.olingo</groupId>
 			<artifactId>olingo-odata2-core</artifactId>
 			<version>${project.version}</version>
 		</dependency>
@@ -109,7 +109,7 @@
 		<!-- OData Java JPA API -->
 		<!-- ########################## -->
 		<dependency>
-			<groupId>org.apache.olingo</groupId>
+			<groupId>com.codbex.olingo</groupId>
 			<artifactId>olingo-odata2-jpa-processor-api</artifactId>
 			<version>${project.version}</version>
 		</dependency>
