@@ -71,7 +71,7 @@
 
 	<dependencies>
 		<dependency>
-			<groupId>org.apache.olingo</groupId>
+			<groupId>com.codbex.olingo</groupId>
 			<artifactId>olingo-odata2-core</artifactId>
 			<version>${version.olingo}</version>
 		</dependency>
